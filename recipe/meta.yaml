@@ -1,5 +1,5 @@
 {% set name = "pytask-latex" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytask_latex-{{ version }}.tar.gz
-  sha256: aa0529ab6c087c755c1f8d71ed216ad29cc8fb06527bc273e06140cf90f21a83
+  sha256: eb5720fd03f45e47553a7e0a33f424a7107f0dd670795af565ffac4d1078d737
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
