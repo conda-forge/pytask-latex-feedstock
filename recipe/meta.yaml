@@ -18,13 +18,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
     - setuptools_scm
     - toml
   run:
-    - python >=3.6
-    - pytask >=0.1.0
-    - latex-dependency-scanner
+    - python >=3.7
+    - pytask >=0.1.7
+    - latex-dependency-scanner >=0.1.1
 
 test:
   imports:
