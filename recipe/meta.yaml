@@ -11,7 +11,7 @@ source:
   sha256: 59ad9bb32c2e0a1714c865987624ce48705fd009c84153f551008ef6f676e55d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -25,7 +25,7 @@ requirements:
     - latex-dependency-scanner >=0.1.1
     - pybaum >=0.1.1
     - python >=3.7
-    - pytask >=0.1.7
+    - pytask >=0.2
 
 test:
   imports:
