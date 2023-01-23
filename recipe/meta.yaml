@@ -1,5 +1,5 @@
 {% set name = "pytask-latex" %}
-{% set version = "0.2.1" %}
+{% set version = "0.3.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytask_latex-{{ version }}.tar.gz
-  sha256: 69fa7ad4811c47482c5c9ef2d01eec2bf62682a055eff85b343251489723d22b
+  sha256: 7f267f444def5bcffc428723a52b6e5247a47256ee18c7d0a512a835d26071a4
 
 build:
   number: 0
@@ -23,9 +23,10 @@ requirements:
     - toml
   run:
     - latex-dependency-scanner >=0.1.1
+    - pluggy
     - pybaum >=0.1.1
     - python >=3.7
-    - pytask >=0.2
+    - pytask >=0.3
 
 test:
   imports:
