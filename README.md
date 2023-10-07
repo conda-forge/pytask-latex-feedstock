@@ -1,11 +1,11 @@
-About pytask-latex
-==================
+About pytask-latex-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytask-latex-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pytask-dev/pytask-latex
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pytask-latex-feedstock/blob/main/LICENSE.txt)
 
 Summary: Compile LaTeX documents with pytask.
 
