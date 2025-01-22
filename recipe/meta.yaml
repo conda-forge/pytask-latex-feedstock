@@ -1,5 +1,6 @@
 {% set name = "pytask-latex" %}
 {% set version = "0.4.2" %}
+{% set python_min = "3.8" %}
 
 
 package:
@@ -7,24 +8,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytask_latex-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pytask_latex-{{ version }}.tar.gz
   sha256: a92fd1267583b506cc1d5db9c16e64d54bb8d0de9d54dbdd48451fbca7e28a57
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools_scm
     - toml
   run:
     - latex-dependency-scanner >=0.1.1
     - pluggy >=1.0.0
-    - python >=3.8
+    - python >={{ python_min }}
     - pytask >=0.4.0
 
 test:
@@ -34,6 +35,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/pytask-dev/pytask-latex
