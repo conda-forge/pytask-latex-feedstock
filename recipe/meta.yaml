@@ -18,8 +18,8 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
-    - setuptools_scm
-    - toml
+    - hatchling
+    - hatch-vcs
   run:
     - latex-dependency-scanner >=0.1.1
     - pluggy >=1.0.0
